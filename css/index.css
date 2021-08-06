@@ -1,0 +1,381 @@
+@charset "utf-8";
+*{
+	box-sizing: border-box;
+	padding: 0 ;
+	margin: 0;
+}
+@font-face{
+	font-family: 'Courier New', Courier, monospace;
+	src :url(../font/Gotu-Regular.ttf);
+}
+@font-face{
+	font-family: Muli;
+	src:url(../font/Muli-VariableFont_wght.ttf);
+}
+body{
+	width: 100%;
+	height: 100%;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	background-color:rgb(189, 124, 81);
+
+}
+
+.w-80{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	padding: 10px 10px;
+}
+/* Start Header Coding */
+
+header{
+	width: 100%;
+	height: 100px;
+	background: rgba(19, 122, 100, 0.815);
+	float: left;
+}
+
+header .menu{
+	width: 95%;
+	height: 55px;
+	margin: auto;
+	padding: 10px 10px;
+}
+
+header .menu .brand-name{
+	width: 20%;
+	float: left;
+}
+header .menu .brand-name a{
+	text-decoration: none;
+}
+header .menu .brand-name h2{
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 35px;
+	color: rgb(240, 240, 240);
+}
+/* start nav ul li coding */
+header .menu nav{
+	width: 60%;
+	float:left;
+}
+
+header .menu nav ul{
+	list-style: cross-fade();
+}
+
+header .menu nav ul li{
+	display: inline-block;
+	margin: 8px 10px;
+	padding: 2px 10px;
+}
+
+header .menu nav ul li:hover{
+	border:none;
+	border-bottom: 3px solid rgb(4, 6, 143);
+}
+
+header .menu nav ul li:hover a{
+	color: #00bcd4;
+}
+
+header .menu nav ul li a{
+	color: rgba(255, 255, 255, 0.712);
+	text-decoration:none;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* End Header Coding */
+
+/* Start custom scrollbar coding*/
+
+body::-webkit-scrollbar{
+	width: 8px;
+	background: black;
+}
+
+body::-webkit-scrollbar-thumb{
+	background: yellow;
+}
+
+/* End custom scrollbar coding*/
+/* Start Section Coding */
+
+section{
+	width: 100%;
+	float: left;
+}
+section .section-img{
+	width: 100%;
+	height: 480px;
+	background: url(../images/1.jpg) no-repeat;
+    background-size: cover;
+}
+section .section-img1{
+	width: 100%;
+	height: 350px;
+	
+	background: url(../images/r1) no-repeat;
+	float: left;
+    background-size: cover;
+}
+section .section-bg-box{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	text-align: center;
+	padding: 150px 0;
+}
+section .section-bg-box h1{
+	background: rgb(12, 131, 91);
+	color: white;
+	font-size: 40px;
+	width: 60%;
+	margin: auto;
+}
+section .section-bg-box h2{
+	background: rgb(187, 84, 37);
+	color: white;
+	width: 50%;
+	margin: auto;
+	font-size: 20px;
+}
+section .section-imgs{
+	width: 100%;
+	height: 480px;
+	background: url(../images/1.jpg) no-repeat;
+    background-size: cover;
+}
+section .section-bg1-box{
+	width: 100%;
+	height: 100%;
+	background: rgba(109, 106, 106, 0.842);
+	text-align: center;
+	padding: 150px 0;
+}
+section .section-bg1-box h1{
+	background: rgba(79, 206, 62, 0.74);
+	color: rgba(27, 25, 25, 0.52);
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 40px;
+	width: 50%;
+	margin:auto;
+}
+section .section-bg1-box h2{
+	background: rgb(187, 84, 37,0.74);
+	color: rgba(228, 227, 218, 0.993)
+	width: 50%;
+	margin: auto;
+	font-size: 20px;
+}
+
+section .welcome-text{
+
+	font-size: 35px;
+    text-transform: uppercase;
+    background: rgba(255, 94, 0, 0.952);
+    width: 60%;
+    padding: 0 5px;
+    color: blockquote;
+}
+section p{
+	font-size: 22px;
+	text-align: justify;
+}
+section ul{
+	padding: 0;
+	margin-left:10px;
+	margin-top: 20px;
+	list-style:none;
+}
+section ul li{
+	font-size: 20px;
+	line-height: 30px;
+}
+section h2{
+	font-size: 30px;
+}
+section .about-box{
+	width: 100%;
+}
+section .about-box p{
+	font-size: 18px;
+}
+section .about-box div:nth-child(1){
+	width: 60%;
+	float: left;
+	padding: 10px;
+}
+section .about-box div:nth-child(2){
+	width: 40%;
+	float: left;
+	padding: 10px;
+}
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+	background-color: transparent;
+	width: 300px;
+	height: 200px;
+	border: 1px solid #f1f1f1;
+	padding: 0px 10px;
+	float: left;
+
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+ .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+	background-color: #bbb;
+	color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+	background-color: dodgerblue;
+	color: white;
+	transform: rotateY(180deg);
+  }
+  
+  
+  
+  
+/* gallery Coding */
+section .form-box{
+	padding: 30px;
+}
+section .form-box .gallery{
+	width: 100%;
+	height: 200px;
+	padding: 0 5px;
+
+}
+section .form-box .gallery div{
+  width: 45%;
+  height: 100%;
+  float: left;
+  padding: 30px;
+}
+section .form-box .gallery div img{
+	border-radius: 50px;
+}
+section .form-box form{
+	margin-top: 30px;
+}
+section .form-box input:focus,textarea:focus,button:focus{
+	outline: saddlebrown;
+}
+section .form-box input,textarea{
+	width: 50%;
+	height: 35px;
+	border:1px solid rgba(204, 204, 204, 0.377);
+	border-radius: 5px;
+	padding: 0 10px;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 16px;
+}
+section .wrapper{
+
+	font-size: 45px;
+    text-transform: uppercase;
+    background: rgba(255, 123, 0, 0.609);
+    width: 60%;
+    padding: 0 5px;
+    color: darkslategrey;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+section p{
+	font-size: 22px;
+	text-align: justify;
+}
+section ul{
+	padding: 0;
+	margin-left:10px;
+	margin-top: 20px;
+	list-style: none;
+}
+textarea{
+	height: 100px;
+}
+section .form-box form #register-btn,#login-btn,#contact-btn{
+	font-family: Muli;
+	font-size: 20px;
+	color: rgba(255, 255, 255, 0.52);
+	padding: 10px;
+	border:none;
+	cursor: pointer;
+	border-radius: 3px;
+}
+section .form-box form #login-btn{
+	background: rgba(255, 60, 0, 0.63);
+}
+section .form-box form #contact-btn{
+	background: rgba(0, 225, 255, 0.534);
+}
+section .form-box form #register-btn{
+	background: #007bff;
+}
+section .form-box form #contact-btn:hover{
+	background: #080896;
+}
+section .form-box form #login-btn:hover{
+	background: #9E0707;
+}
+section .form-box form #register-btn:hover{
+	background: blue;
+}
+/* End Section Coding */
+/* Start Footer Coding */
+
+footer{
+	width: 100%;
+	background: rgb(63, 5, 5);
+	float: left;
+	color: white;
+	padding: 30px 0;
+
+}
+
+footer .footer-box{
+	width: 25%;
+	float: left;
+	height: 100%;
+}
+
+footer .footer-box a{
+	display: block;
+	font-family: Gotu;
+	color: white;
+	font-size: 20px;
+	text-transform: capitalize;
+}
+footer .footer-box a:hover{
+	text-decoration: none;
+	color: rgba(255, 0, 0, 0.431);
+}
+/* End Footer Coding */
